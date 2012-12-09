@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>At 方法</title>
+<style type="text/css">
+<!--
+body { margin:0 auto; font-size:12px; line-height:150%; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:link, a:active, a:visited {color: #0000FF;text-decoration: underline;}
+a:hover {color: #0066FF;text-decoration: underline;}
+ul, li { margin:0; padding:0; list-style:none; display:inline;}
+
+	#header { width:100%; background-color:#9CF; border-bottom:1px solid #999;}
+		#header .headertxt { padding:5px;}
+	
+	#main { width:96%; margin:0 auto; margin-top:20px;}
+		#main #name { font-size:16px; color:#03F; border-bottom:2px solid #03F; padding-bottom:5px; margin-bottom:10px;}
+		#main #content { font-size:14px; margin-bottom:20px;}
+		#main .title, #footer .title { font-size:12px; font-weight:bold; color:#03F; }
+		#main .code { padding:5px 30px;}
+		#main .codem { color:#F60;}
+		#main .codeparam { color:#666; font-style:italic;}
+		#main .codetitle { color:#666; font-style:italic; width:1px; padding-right:10px;}
+		#main .codetype { color:#666; font-style:italic;}
+		#main .codenote { }
+		#main .codeerror { color:#900;}
+		#main td {padding:3px;}
+		
+		#wrong { margin-bottom:5px;}
+		#wrong .codewrong{ background-color:#F00; color:#FFF; font-size:12px; padding:2px 2px 4px;}
+		
+	#footer { width:96%; margin:0 auto; margin-top:10px;}
+		#footer .nav { padding:5px 0; border-bottom:1px solid #999;}
+		#footer .mail { padding:5px 0;}
+		#footer .copyright { }
+	
+	/** NORMAL CODE HIGHLIGHT **/
+	#normal { border:1px solid #ccc;}
+	#normal .hcode { font-family: Courier New, Courier, monospace; line-height:19px; }
+	#normal .hline { color:#333; font-style:italic; background-color:#ccc; border-right:3px solid #0C0; margin-right:8px; padding:2px 10px;}
+	#normal .hacl { color:#F60;}
+	#normal .hver { color:#00F;}
+	#normal .hconst { color:#099;}
+	#normal .hparam { color:#060;}
+	#normal .hnumber { color:#F00;}
+	#normal .hfunction { color:#906;}
+	#normal .hnote { color:#999;}
+	#normal .hresult { background-color:#000; color:#1dc116;}
+	
+	/** FADETOGREY HIGHLIGHT **/
+	#fadetogrey { border:1px solid #000;}
+	#fadetogrey .hcode { font-family: Courier New, Courier, monospace; line-height:19px; background-color:#121212; color:#FFF;}
+	#fadetogrey .hline { color:#afafaf; font-style:italic;border-right:3px solid #36C; margin-right:8px; padding:2px 10px;}
+	#fadetogrey .hacl { color:#F60;}
+	#fadetogrey .hver { color:#d01d33;}
+	#fadetogrey .hparam { color:#e3e658;}
+	#fadetogrey .hnumber { color:#F00;}
+	#fadetogrey .hfunction { color:#906;}
+	#fadetogrey .hnote { color:#696854;}
+-->
+</style>
+</head>
+
+<body>
+<div id="header"><div class="headertxt">Boyle.ACL 类库文档 (VBScript)</div></div>
+<div id="main">
+  <div id="name"></span> System.Array.At 方法</div>
+  <div id="content">根据下标设置或获取数组某一项的值</div>
+<div id="method">
+   	  <div class="title">语法</div>
+        <div class="code"><span class="codem">System.Array.At</span>(<span class="codeparam">index</span>)[ = <span class="codeparam">value</span>]</div>
+  </div>
+<div id="param">
+    	<div class="title">参数</div>
+        <div class="code">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="codetitle">index</td>
+              <td class="codetype">Integer (整数) 或 String (字符串)</td>
+            </tr>
+            <tr>
+              <td class="codetitle">&nbsp;</td>
+              <td class="codenote">数组的下标，只能由自然数、字母、下划线(_)、点(.)和斜杠(/)组成。<br />
+              数组是普通数组时，下标就是自然数；数组是Hash数组时，下标除了可以是自然数之外，还可以是非空字符串。</td>
+            </tr>
+            <tr>
+              <td class="codetitle">value</td>
+              <td class="codetype">Array (数组) 或 Boolean (布尔值) 或 Datetime (时间日期) 或 Numeric (数值) 或 String (字符串)</td>
+            </tr>
+            <tr>
+              <td class="codetitle">&nbsp;</td>
+              <td class="codenote">被设置的数组的值</td>
+            </tr>
+          </table>
+    </div>
+    </div>
+	<div id="return">
+    	<div class="title">返回值</div>
+        <div class="code"><span class="codetype">Array (数组) 或 Boolean (布尔值) 或 Datetime (时间日期) 或 Numeric (数值) 或 String (字符串)</span></div>
+  </div>
+	<div id="notes">
+    	<div class="title">注释</div>
+        <div class="code">无</div>
+  </div>
+	<div id="sample">
+    	<div class="title">示例</div>
+        <div class="code">
+       	  <div id="normal">
+       	    <div class="hcode"><span class="hline">&nbsp;1.</span><span class="hnote">'// 创建一个新对象</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;2.</span><span class="hver">Dim</span> ArrayX: <span class="hver">Set</span> ArrayX = <span class="hacl">System.Array.New</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;3.</span>ArrayX.Data = <span class="hparam">"中 华 人 民 共 和 国"</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;4.</span><span class="hnote">'// 设置下标为5的数组值为“产”</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;5.</span>ArrayX.At(<span class="hnumber">5</span>) = <span class="hparam">"产"</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;6.</span><span class="hnote">'// 设置下标为6的数组值为“党”，下标为7的数组值为“万岁”</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;7.</span><span class="hnote">'// 此时数组已经变成：Array("中", "华", "人", "民", "共", "产", "党", "万岁")</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;8.</span>ArrayX(<span class="hnumber">6</span>) = <span class="hparam">"党"</span>: ArrayX(<span class="hnumber">7</span>) = <span class="hparam">"万岁"</span></div>
+        	  <div class="hcode"><span class="hline">&nbsp;9.</span><span class="hnote">'// 输出下标为7的数组值，页面将输出：万岁</span></div>
+        	  <div class="hcode"><span class="hline">10.</span><span class="hacl">System.WB</span> ArrayX(<span class="hnumber">7</span>)</div>
+        	  <div class="hcode"><span class="hline">11.</span><span class="hnote">'// 使用字符串做为下标来赋值和取值</span></div>
+        	  <div class="hcode"><span class="hline">12.</span>ArrayX(<span class="hparam">"NOTE"</span>) = <span class="hparam">"万万岁！"</span></div>
+        	  <div class="hcode"><span class="hline">13.</span><span class="hacl">System.WB</span> ArrayX(<span class="hparam">"NOTE"</span>)</div>
+        	  <div class="hcode"><span class="hline">14.</span><span class="hnote">'// 仍然可以用数字下标获取数组中的值</span></div>
+        	  <div class="hcode"><span class="hline">15.</span><span class="hnote">'// System.WB ArrayX(8)</span></div>
+        	  <div class="hcode"><span class="hline">16.</span><span class="hnote">'// 页面将输出：万万岁！</span></div>
+        	  <div class="hcode"><span class="hline">17.</span><span class="hver">Dim</span> arr: arr = ArrayX.Data</div>
+        	  <div class="hcode"><span class="hline">18.</span><span class="hver">Dim</span> I: <span class="hver">For</span> I=<span class="hnumber">0</span> <span class="hver">To</span> <span class="hfunction">UBound</span>(arr)</div>
+        	  <div class="hcode"><span class="hline">19.</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="hacl">System.W</span> arr(I)</div>
+        	  <div class="hcode"><span class="hline">20.</span><span class="hver">Next</span></div>
+              <div class="hcode hresult"><span class="hline">21.</span>'// 最终输出结果：</div>
+       	    <div class="hcode hresult"><span class="hline">22.</span>万岁</div>
+           	  <div class="hcode hresult"><span class="hline">23.</span>万万岁！</div>
+           	  <div class="hcode hresult"><span class="hline">24.</span>中华人民共产党万岁万万岁！</div>
+       	  </div>
+        </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="title">请参见</div>
+	<div class="nav"><a href="index.html">System.Array类</a>&nbsp;|&nbsp;<a href="../index.html">System.Common基类</a></div>
+	<div class="mail"><a href="mailto:boyle7@qq.com">发送有关此主题的意见</a></div>
+    <div class="copyright">Boyle.ACL v4.0.121028 类库文档. Copyright (C) 2006-2012 Boyle.</div>
+</div>
+
+</body>
+</html>

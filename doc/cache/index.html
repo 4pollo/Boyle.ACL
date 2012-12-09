@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>System.Cache 类</title>
+<style type="text/css">
+<!--
+body { margin:0 auto; font-size:12px; line-height:150%; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:link, a:active, a:visited {color: #0000FF;text-decoration: underline;}
+a:hover {color: #0066FF;text-decoration: underline;}
+ul, li { margin:0; padding:0; list-style:none; display:inline;}
+
+	#header { width:100%; background-color:#9CF; border-bottom:1px solid #999;}
+		#header .headertxt { padding:5px;}
+	
+	#main { width:96%; margin:0 auto; margin-top:20px;}
+		#main #name { font-size:16px; color:#03F; border-bottom:2px solid #03F; padding-bottom:5px; margin-bottom:10px;}
+		#main #content { font-size:14px; margin-bottom:20px;}
+		#main #param { margin-top:10px;}
+		#main .title, #footer .title { font-size:14px; font-weight:bold; color:#03F; }
+		#main .code { margin-top:10px;}
+		#main .codem { color:#F60;}
+		#main .codeparam { color:#666; font-style:italic;}
+		#main .codetitle { color:#666; width:150px; padding:3px;}
+		#main .codetype { color:#666;}
+		#main .codenote { padding:3px;}
+		#main .codeerror { color:#900;}
+		#main .codetitled { color:#000; font-weight:bold; background-color:#CCC;}
+		#main .codenoted { color:#000; font-weight:bold; background-color:#CCC;}
+		#main table { background-color:#999;}
+		#main td { background-color:#FFF;}
+	
+	#footer { width:96%; margin:0 auto; margin-top:10px; border-top:1px solid #999;}
+		#footer .nav { padding:5px 0; border-bottom:1px solid #999;}
+		#footer .mail { padding:5px 0;}
+		#footer .copyright { }
+-->
+</style>
+</head>
+
+<body>
+<div id="header"><div class="headertxt">Boyle.ACL 类库文档 (VBScript)</div></div>
+<div id="main">
+	<div id="name">System.Cache 概述</div>
+    <div id="content">处理服务器缓存的类</div>
+	<div id="method">
+   	  <div class="title">属性</div>
+        <div class="code">
+          <table width="100%" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td class="codetitle codetitled">名称</td>
+              <td class="codenote codenoted">说明</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="count.html">Cache.Count</a></td>
+              <td class="codenote">查询当前所有缓存数量，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="expires.html">Cache.Expires</a></td>
+              <td class="codenote">设置缓存过期时间，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="filetype.html">Cache.FileType</a></td>
+              <td class="codenote">文件缓存的后缀名，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="item.html">Cache.Item</a></td>
+              <td class="codenote">存储和取回缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="savepath.html">Cache.SavePath</a></td>
+              <td class="codenote">文件缓存在站点上的存储目录，此属性可读可写</td>
+            </tr>
+          </table>
+        </div>
+  </div>
+	<div id="param">
+    	<div class="title">方法</div>
+        <div class="code">
+          <table width="100%" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td class="codetitle codetitled">名称</td>
+              <td class="codenote codenoted">说明</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="new.html">Cache.New</a></td>
+              <td class="codenote">建立缓存对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="ready.html">Cache.Ready</a></td>
+              <td class="codenote">检查缓存是否过期</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="clear.html">Cache.Clear</a></td>
+              <td class="codenote">清空所有缓存，包括内存缓存和文件缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="remove.html">Cache.Remove</a></td>
+              <td class="codenote">删除某个文件缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="removeall.html">Cache.RemoveAll</a></td>
+              <td class="codenote">删除所有文件缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="removeapp.html">Cache.RemoveApp</a></td>
+              <td class="codenote">删除某个内存缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="removeappall.html">Cache.RemoveAppAll</a></td>
+              <td class="codenote">删除所有内存缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="save.html">Cache.Save</a></td>
+              <td class="codenote">缓存数据保存为文件缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="saveall.html">Cache.SaveAll</a></td>
+              <td class="codenote">所有缓存数据保存为文件缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="saveapp.html">Cache.SaveApp</a></td>
+              <td class="codenote">缓存数据保存为内存缓存</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="saveappall.html">Cache.SaveAppAll</a></td>
+              <td class="codenote">所有缓存数据保存为内存缓存</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+	</div>
+<div id="footer">
+	<div class="mail"><a href="mailto:boyle7@qq.com">发送有关此主题的意见</a></div>
+    <div class="copyright">Boyle.ACL v4.0.121028 类库文档. Copyright (C) 2006-2012 Boyle.</div>
+</div>
+
+</body>
+</html>

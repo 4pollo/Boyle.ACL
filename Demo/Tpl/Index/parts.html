@@ -1,0 +1,40 @@
+﻿{include "head.html"}
+<div id="main">
+
+<ul class="title">
+<li>{$catename}</li>
+</ul>
+<ul class="title">
+<li>多标签同时进行替换:{$demo1},{$demo2},{$demo3}</li>
+</ul>
+	<div class="line">
+		<ul>
+		<!-- {$customer name="block1" dr="callBack(param)"} -->
+		<li>{customer.id}.{customer.ci_name}({customer.ci_address}|{customer.ci_telephone})</li>
+		<!-- {empty:customer} -->
+		<li>没有相关数据！</li>
+		<!-- {/empty:customer} -->
+		<!-- {/$customer} -->
+		</ul>
+	</div>
+	<div class="line">
+		<ul>
+		<!-- {$customer name="block2" dr="callBack(param)"} -->
+		<li>{customer.id}.{customer.name}({customer.addr}|{customer.tel}){customer.test}</li>
+		<!-- {empty:customer} -->
+		<li>没有相关数据！</li>
+		<!-- {/empty:customer} -->
+		<!-- {/$customer} -->
+		</ul>
+	</div>
+	<div class="line">
+		<ul>
+		<!-- {$parts} -->
+		<li>{parts.id}.{parts.name}({parts.car})</li>
+		<!-- {/$parts} -->
+		</ul>
+		{$pager}
+	</div>
+
+</div>
+{include "footer.html"}

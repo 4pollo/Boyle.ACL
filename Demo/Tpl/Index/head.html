@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$title}</title>
+<link href="stylesheet/basic.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+.sql, .runtime { margin: 0 auto; width: 90%; margin-top: 10px;}
+.sql { padding: 2px; background-color: #000; color: #FFF; font-family: Monaco,Consolas,'Lucida Console','Courier New',serif;}
+#main { margin: 0 auto; width: 90%; margin-top: 10px;}
+#main .title { font-size: 14px;}
+#main li { line-height: 1.5;}
+
+.line { margin-top: 20px; border-top: 10px solid #666;}
+/*默认样式*/
+.pager { margin-top:10px; margin-bottom:10px; padding:3px; text-align:left; color:#66C; }
+/*分页链接样式*/
+.pager a { margin:2px; padding:2px 5px; color:#009; text-decoration:none; border:1px solid #aad; }
+/*分页链接鼠标移过的样式*/  
+.pager a:hover, .pager a:active { color:#000; border:1px solid #009; }
+/*当前页码的样式*/  
+.pager span.current { font-weight:bold; margin:0 2px; padding:2px 5px; color:#fff; background-color:#009; border:1px solid #009; }
+/*不可用分页链接的样式(比如第1页时的"上一页"链接)*/  
+.pager span.disabled { margin:0 2px; padding:2px 5px; color:#ddd; border:1px solid #eee; }
+</style>
+</head>
+
+<body>
+<div class="sql">{$sql}</div>

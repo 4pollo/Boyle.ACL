@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,form,input,button,textarea,p,dt,dd,dl,table,thead,tbody,tr,td{margin:0px;padding:0px;}
+body{font:12px/1.5 Tahoma,"\5b8b\4f53",Arial,Helvetica,"\5fae\8f6f\96c5\9ed1",sans-serif;color:#333;background:#fff;}
+li{list-style:none;}
+img{border:none;}
+a{color:#2a8000;text-decoration:none;outline:none;}
+a:hover{color:#2a8000;text-decoration:underline;}
+table{border-collapse:collapse;border-spacing:0;}
+input,button,textarea,select{vertical-align:middle;}
+input[type="checkbox"]{width:13px;height:15px;}
+em,i{font-style:normal;}
+.clearfix:after {clear:both;display:block;height:0;content:".";visibility:hidden;}

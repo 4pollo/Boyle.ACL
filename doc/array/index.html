@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>System.Array 类</title>
+<style type="text/css">
+<!--
+body { margin:0 auto; font-size:12px; line-height:150%; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:link, a:active, a:visited {color: #0000FF;text-decoration: underline;}
+a:hover {color: #0066FF;text-decoration: underline;}
+ul, li { margin:0; padding:0; list-style:none; display:inline;}
+
+	#header { width:100%; background-color:#9CF; border-bottom:1px solid #999;}
+		#header .headertxt { padding:5px;}
+	
+	#main { width:96%; margin:0 auto; margin-top:20px;}
+		#main #name { font-size:16px; color:#03F; border-bottom:2px solid #03F; padding-bottom:5px; margin-bottom:10px;}
+		#main #content { font-size:14px; margin-bottom:20px;}
+		#main #param { margin-top:10px;}
+		#main .title, #footer .title { font-size:14px; font-weight:bold; color:#03F; }
+		#main .code { margin-top:10px;}
+		#main .codem { color:#F60;}
+		#main .codeparam { color:#666; font-style:italic;}
+		#main .codetitle { color:#666; width:150px; padding:3px;}
+		#main .codetype { color:#666;}
+		#main .codenote { padding:3px;}
+		#main .codeerror { color:#900;}
+		#main .codetitled { color:#000; font-weight:bold; background-color:#CCC;}
+		#main .codenoted { color:#000; font-weight:bold; background-color:#CCC;}
+		#main table { background-color:#999;}
+		#main td { background-color:#FFF;}
+	
+	#footer { width:96%; margin:0 auto; margin-top:10px; border-top:1px solid #999;}
+		#footer .nav { padding:5px 0; border-bottom:1px solid #999;}
+		#footer .mail { padding:5px 0;}
+		#footer .copyright { }
+-->
+</style>
+</head>
+
+<body>
+<div id="header"><div class="headertxt">Boyle.ACL 类库文档 (VBScript)</div></div>
+<div id="main">
+	<div id="name">System.Array 概述</div>
+    <div id="content">处理数组(Array)和哈希表(Hash)的类</div>
+	<div id="method">
+   	  <div class="title">属性</div>
+        <div class="code">
+          <table width="100%" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td class="codetitle codetitled">名称</td>
+              <td class="codenote codenoted">说明</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="ignorecase.html">Array.IgnoreCase</a></td>
+              <td class="codenote">设置和查询数组操作时是否忽略数组值的大小写，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="data.html">Array.Data</a></td>
+              <td class="codenote">设置源数组为简单数组并赋值，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="hash.html">Array.Hash</a></td>
+              <td class="codenote">设置源数组为Hash数组并赋值，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="first.html">Array.First</a></td>
+              <td class="codenote">返回数组第一个元素的值，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="last.html">Array.Last</a></td>
+              <td class="codenote">返回数组最后一个元素的值，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="end.html">Array.End</a></td>
+              <td class="codenote">返回数组的最大数字下标，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="min.html">Array.Min</a></td>
+              <td class="codenote">返回数组最小元素的值，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="max.html">Array.Max</a></td>
+              <td class="codenote">返回数组最大元素的值，此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="size.html">Array.Size</a></td>
+              <td class="codenote">返回当前数组的长度（元素个数），此属性只读</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="maps.html">Array.Maps</a></td>
+              <td class="codenote">将Hash数组映射为 Dictionary 对象，此属性可读可写</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="serialize.html">Array.Serialize</a></td>
+              <td class="codenote">序列化Hash数组，此属性只读</td>
+            </tr>
+          </table>
+        </div>
+  </div>
+	<div id="param">
+    	<div class="title">方法</div>
+        <div class="code">
+          <table width="100%" border="0" cellspacing="1" cellpadding="0">
+            <tr>
+              <td class="codetitle codetitled">名称</td>
+              <td class="codenote codenoted">说明</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="at.html">Array.At</a></td>
+              <td class="codenote">根据下标设置或获取数组某一项的值</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="has.html">Array.Has</a></td>
+              <td class="codenote">检测数组中是否包含某个元素</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="hasindex.html">Array.HasIndex</a></td>
+              <td class="codenote">检测是否包含某个下标</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="_index.html">Array.Index</a></td>
+              <td class="codenote">根据Hash的列名获取其数字下标</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="indexof.html">Array.IndexOf</a></td>
+              <td class="codenote">检测元素在数组中的数字下标</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="indexofhash.html">Array.IndexOfHash</a></td>
+              <td class="codenote">检测元素在Hash数组中的字符串下标</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="delete.html">Array.Delete</a></td>
+              <td class="codenote">删除指定下标的数组元素</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="delete_.html">Array.Delete_</a></td>
+              <td class="codenote">删除指定下标的数组元素，返回新的对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="insert.html">Array.Insert</a></td>
+              <td class="codenote">向指定数字下标处插入一个或多个元素</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="insert_.html">Array.Insert_</a></td>
+              <td class="codenote">向指定数字下标处插入一个或多个元素，返回新的对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="pop.html">Array.Pop</a></td>
+              <td class="codenote">删除数组的最后一个元素</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="pop_.html">Array.Pop_</a></td>
+              <td class="codenote">删除数组的最后一个元素，返回新的对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="push.html">Array.Push</a></td>
+              <td class="codenote">添加一个元素到数组的末尾</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="push_.html">Array.Push_</a></td>
+              <td class="codenote">添加一个元素到数组的末尾，返回新的对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="shift.html">Array.Shift</a></td>
+              <td class="codenote">删除数组的第一个元素</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="shift_.html">Array.Shift_</a></td>
+              <td class="codenote">删除数组的第一个元素，返回新的对象</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="unshift.html">Array.UnShift</a></td>
+              <td class="codenote">添加一个或多个元素到数组的开头</td>
+            </tr>
+            <tr>
+              <td class="codetitle"><a href="unshift_.html">Array.UnShift_</a></td>
+              <td class="codenote">添加一个或多个元素到数组的开头，返回新的对象</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+	</div>
+<div id="footer">
+	<div class="mail"><a href="mailto:boyle7@qq.com">发送有关此主题的意见</a></div>
+    <div class="copyright">Boyle.ACL v4.0.121028 类库文档. Copyright (C) 2006-2012 Boyle.</div>
+</div>
+
+</body>
+</html>

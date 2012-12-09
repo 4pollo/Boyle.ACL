@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Count 属性</title>
+<style type="text/css">
+<!--
+body { margin:0 auto; font-size:12px; line-height:150%; font-family:Verdana, Arial, Helvetica, sans-serif;}
+a:link, a:active, a:visited {color: #0000FF;text-decoration: underline;}
+a:hover {color: #0066FF;text-decoration: underline;}
+ul, li { margin:0; padding:0; list-style:none; display:inline;}
+
+	#header { width:100%; background-color:#9CF; border-bottom:1px solid #999;}
+		#header .headertxt { padding:5px;}
+	
+	#main { width:96%; margin:0 auto; margin-top:20px;}
+		#main #name { font-size:16px; color:#03F; border-bottom:2px solid #03F; padding-bottom:5px; margin-bottom:10px;}
+		#main #content { font-size:14px; margin-bottom:20px;}
+		#main .title, #footer .title { font-size:12px; font-weight:bold; color:#03F; }
+		#main .code { padding:5px 30px;}
+		#main .codem { color:#F60;}
+		#main .codeparam { color:#666; font-style:italic;}
+		#main .codetitle { color:#666; font-style:italic; width:1px; padding-right:5px;}
+		#main .codetype { color:#666; font-style:italic;}
+		#main .codenote { }
+		#main .codeerror { color:#900;}
+		#main td {padding:3px;}		
+		#main .codetips { background-color:#F00; color:#FFF; padding:2px;}
+		
+		#wrong { float:right; text-align:right;}
+		#wrong .codewrong{ background-color:#F00; color:#FFF; padding:2px 2px 4px;}
+	
+	#footer { width:96%; margin:0 auto; margin-top:10px;}
+		#footer .nav { padding:5px 0; border-bottom:1px solid #999;}
+		#footer .mail { padding:5px 0;}
+		#footer .copyright { }
+	
+	/** NORMAL CODE HIGHLIGHT **/
+	#normal { border:1px solid #ccc;}
+	#normal .hcode { font-family: Courier New, Courier, monospace; line-height:19px; }
+	#normal .hline { color:#333; font-style:italic; background-color:#ccc; border-right:3px solid #0C0; margin-right:8px; padding:2px 10px;}
+	#normal .hacl { color:#F60;}
+	#normal .hver { color:#00F;}
+	#normal .hconst { color:#099;}
+	#normal .hparam { color:#060;}
+	#normal .hnumber { color:#F00;}
+	#normal .hfunction { color:#906;}
+	#normal .hnote { color:#999;}
+	#normal .hresult { background-color:#000; color:#1dc116;}
+	
+	/** FADETOGREY HIGHLIGHT **/
+	#fadetogrey { border:1px solid #000;}
+	#fadetogrey .hcode { font-family: Courier New, Courier, monospace; line-height:19px; background-color:#121212; color:#FFF;}
+	#fadetogrey .hline { color:#afafaf; font-style:italic;border-right:3px solid #36C; margin-right:8px; padding:2px 10px;}
+	#fadetogrey .hacl { color:#F60;}
+	#fadetogrey .hver { color:#d01d33;}
+	#fadetogrey .hparam { color:#e3e658;}
+	#fadetogrey .hnumber { color:#F00;}
+	#fadetogrey .hfunction { color:#906;}
+	#fadetogrey .hnote { color:#696854;}
+-->
+</style>
+</head>
+
+<body>
+<div id="header"><div class="headertxt">Boyle.ACL 类库文档 (VBScript)</div></div>
+<div id="main">
+	<div id="name">System.Cache.Count 属性</div>
+    <div id="content">查询当前所有缓存数量，此属性只读</div>
+<div id="method">
+   	  <div class="title">语法</div>
+        <div class="code"><span class="codem">System.Cache.Count</span></div>
+  </div>
+	<div id="param">
+    	<div class="title">参数</div>
+        <div class="code">
+          无
+      </div>
+    </div>
+	<div id="return">
+    	<div class="title">返回值</div>
+        <div class="code"><span class="codetype">Integer (整数)</span></div>
+    </div>
+	<div id="notes">
+    	<div class="title">注释</div>
+        <div class="code"> 只有在缓存配置属性：<span class="codeparam">Cache.CountEnabled</span> 为 <span class="codeparam">True</span> 时，才统计保存的缓存数量。 当&nbsp;<span class="codeparam">Cache.CountEnabled</span> 属性为 <span class="codeparam">False</span> 时，<span class="codetips">返回值为&nbsp;-1</span>。</div>
+  </div>
+	<div id="sample">
+    	<div class="title">示例</div>
+    	<div class="code">
+    	  <div id="normal">
+    	    <div class="hcode"><span class="hline">&nbsp;1.</span><span class="hnote">'// 创建一个新对象</span></div>
+    	    <div class="hcode"><span class="hline">&nbsp;2.</span><span class="hver">Dim</span> CacheX: <span class="hver">Set</span> CacheX = <span class="hacl">System.Cache.New</span></div>
+    	    <div class="hcode"><span class="hline">&nbsp;3.</span>CacheX(<span class="hparam">&quot;test1&quot;</span>) = <span class="hparam">&quot;中国&quot;</span></div>
+    	    <div class="hcode"><span class="hline">&nbsp;4.</span>CacheX(<span class="hparam">&quot;test1&quot;</span>).Save</div>
+    	    <div class="hcode"><span class="hline">&nbsp;5.</span>CacheX(<span class="hparam">&quot;test2&quot;</span>) = <span class="hparam">&quot;香港&quot;</span></div>
+    	    <div class="hcode"><span class="hline">&nbsp;6.</span>CacheX(<span class="hparam">&quot;test2&quot;</span>).Save</div>
+    	    <div class="hcode"><span class="hline">&nbsp;7.</span><span class="hnote">'// 查询缓存数量</span></div>
+    	    <div class="hcode"><span class="hline">&nbsp;8.</span><span class="hacl">System.WB</span> CacheX.Count</div>
+    	    <div class="hcode"><span class="hline">&nbsp;9.</span><span class="hnote">'// 不统计缓存数量</span></div>
+    	    <div class="hcode"><span class="hline">10.</span>CacheX.CountEnabled = <span class="hver">False</span></div>
+    	    <div class="hcode"><span class="hline">11.</span><span class="hacl">System.WB</span> CacheX.Count</div>
+    	    <div class="hcode hresult"><span class="hline">12.</span>'// 最终输出结果：</div>
+    	    <div class="hcode hresult"><span class="hline">13.</span>2</div>
+    	    <div class="hcode hresult"><span class="hline">14.</span>-1</div>
+  	    </div>
+  	  </div>
+	</div>
+</div>
+<div id="footer">
+  <div class="title">请参见</div>
+	<div class="nav"><a href="index.html">System.Cache类</a>&nbsp;|&nbsp;<a href="../index.html">System.Common基类</a></div>
+	<div class="mail"><a href="mailto:boyle7@qq.com">发送有关此主题的意见</a></div>
+    <div class="copyright">Boyle.ACL v4.0.121028 类库文档. Copyright (C) 2006-2012 Boyle.</div>
+</div>
+
+</body>
+</html>
